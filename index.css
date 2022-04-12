@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sideImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(90vw, 970px);
+    overflow: hidden;
+}
+
+.sideImage>img {
+    position: relative;
+    top: -100px;
+    left: calc(60px - 4vw);
+    height: 860px;
+    width: auto;
+}
