@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -20,8 +22,46 @@ body {
 
 .sideImage>img {
     position: relative;
-    top: -100px;
     left: calc(60px - 4vw);
-    height: 860px;
+    height: 900px;
     width: auto;
+}
+
+.logoSection {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6vh;
+    width: 40vw;
+    background-color: rgba(36, 36, 36, 0.5);
+}
+
+.logoSection>img {
+    width: 70px;
+}
+
+.logoText {
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+.sideImageFooter {
+    position: absolute;
+    bottom: 12px;
+    background-color: rgba(36, 36, 36, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.sideImageFooter>p>a {
+    color: cyan;
+}
+
+.mainContent {
+    background-color: white;
+    z-index: 1;
 }
