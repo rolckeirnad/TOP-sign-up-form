@@ -70,7 +70,7 @@ body {
 
 .description,
 .formContainer {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .description {
@@ -112,7 +112,7 @@ form>section>p>label>span {
 
 form>section>p>label>input {
     outline: none;
-    border: 1px solid #dddddd;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
     height: 1.8rem;
     padding: 0 10px;
@@ -125,4 +125,38 @@ form>section>p>label>input:hover {
 form>section>p>label>input:focus {
     border: 1px solid #1100ff;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.23);
+}
+
+form>section>p>label>input:invalid,
+.error {
+    border: 1px solid #ff0000;
+}
+
+#mail:invalid+#invalidEmail::after {
+    content: "Please enter a valid email";
+    font-size: 0.8rem;
+    color: red;
+}
+
+#phone_number:invalid+#invalidPhone::after {
+    content: "Please enter a valid phone";
+    font-size: 0.8rem;
+    color: red;
+}
+
+#invalidPassword {
+    font-size: 0.8rem;
+    color: red;
+}
+
+form>p>button {
+    background-color: #596D48;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
