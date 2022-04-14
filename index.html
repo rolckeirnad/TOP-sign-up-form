@@ -42,36 +42,42 @@
             <label for="first_name">
               <span>First Name</span>
               <input type="text" id="first_name" name="firstname">
+              <span id="invalidFirstName"></span>
             </label>
           </p>
           <p>
             <label for="last_name">
               <span>Last Name</span>
               <input type="text" id="last_name" name="lastname">
+              <span id="invalidLastName"></span>
             </label>
           </p>
           <p>
             <label for="mail">
               <span>Email</span>
               <input type="email" id="mail" name="usermail">
+              <span id="invalidEmail"></span>
             </label>
           </p>
           <p>
             <label for="phone_number">
               <span>Phone Number</span>
-              <input type="tel" id="phone_number" name="userphone">
+              <input type="tel" id="phone_number" name="userphone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits">
+              <span id="invalidPhone"></span>
             </label>
           </p>
           <p>
             <label for="password">
               <span>Password</span>
               <input type="password" id="password" name="password">
+              <span id="invalidPassword"></span>
             </label>
           </p>
           <p>
             <label for="confirm_password">
               <span>Confirm Password</span>
               <input type="password" id="confirm_password" name="checkPassword">
+              <span id="invalidPasswordNoMatch"></span>
             </label>
           </p>
         </section>
